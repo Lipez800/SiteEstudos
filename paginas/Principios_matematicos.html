@@ -23,82 +23,69 @@
       <a class="navbar-brand" href="#">Conteúdo</a>
       <ul class="nav nav-pills">
         <li class="nav-item">
-          <a class="nav-link" href="#fat">Conceitos</a>
+          <a class="nav-link" href="#fat">Listas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#mdo">Lógica Formal</a>
+          <a class="nav-link" href="#mdo">Árvore de decisão</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Seleção Rapida</a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#Lógica transcendental">Lógica transcendental</a>
-            <a class="dropdown-item" href="#Lógica dedutiva">Lógica dedutiva</a>
+            <a class="dropdown-item" href="#Combinatória">Combinatória</a>
+            <a class="dropdown-item" href="#Arranjo">Arranjo</a>
             <div role="separator" class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#Lógica indutiva">Lógica indutiva</a>
+            <a class="dropdown-item" href="#Permutação">Permutação</a>
+            <a class="dropdown-item" href="#Combinação">Combinação</a>
           </div>
         </li>
       </ul>
     </nav>
     <div data-spy="scroll" data-target="#navbar-exemplo2" class="espaco2" data-offset="0"></br>
-      <h4 id="fat">Conceitos</h4>
-      <p>Para melhorar o entendimento da lógica, é necessário conhecer as definições de alguns termos importantes e muito utilizados na lógica. Mundim (2002) destaca :</br>
+      <h4 id="fat">Listas</h4>
+      <p>Ao se deparar com um problema de contagem, normalmente será preciso determinar quantos elementos existem em um conjunto finito. Determinar essas quantidades de recursos finitos podem gerar questões difíceis de serem respondidas (GERSTING, 2017).</br> Por isso, vamos inicialmente nos familiarizar com o conceito de lista.</br></br>
 
-• Proposição: consiste em um enunciado, uma frase declarativa.</br>
-• Premissas: consistem em proposições que são utilizadas como base para um raciocínio. Pode-se dizer que são as proposições do silogismo.</br>
-• Argumento: conjunto de enunciados que se relacionam uns com os outros.</br>
-• Silogismo: consiste em um raciocínio dedutivo (premissas) e possibilita a dedução de uma conclusão a partir das premissas.</br>
-• Falácia: consiste em argumentos que logicamente estão incorretos.</br>
-A partir dos vocabulários, podemos definir os tipos de lógica existentes, entre os quais estão a lógica formal e a lógica transcendental.</br></p></br>
-      <h4 id="mdo">Lógica Formal</h4>
-      <p>Começa nos estudos de Aristóteles, na Grécia Antiga. A lógica é dita formal quando analisa e representa a forma de qualquer argumento para que possa ser considerado válido para alguma conclusão.</br> 
+Uma lista é uma sequência ordenada de objetos (SCHEINERMAN, 2015). Costumamos representar uma lista abrindo parênteses e apresentando cada elemento da lista, separando-os por vírgula. Por exemplo, a lista (2, 4, 8, 16) é uma lista cujo primeiro elemento é o número 2, o segundo elemento é o número 4, o terceiro elemento é o número 8 e o quarto elemento é o número 16. A ordem com a qual os elementos figuram na lista é significativa. Assim, a lista (2, 4, 8, 16) não é a mesma que a lista (4, 2, 16, 8). Embora os elementos que compõem a lista sejam os mesmos, a forma pela qual foram arranjados (ordem) é diferente. Também é importante destacar que uma lista pode conter elementos repetidos, como (3, 4, 5, 5, 6), em que o número 5 aparece duas vezes.</br></br>
 
-Para se entender a lógica formal e como formamos nosso raciocínio é importante ter em mente alguns conceitos. Uma proposição é um pensamento em forma de frase declarativa. Essa proposição pode ser verdadeira ou falsa. A lógica não permite concluir se uma proposição ou afirmação é verdadeira ou falsa, ela apenas garante que, com base em premissas verdadeiras, seja possível chegar a conclusões verdadeiras. </br>
+Em uma lista, chamamos de comprimento ao número de elementos que a compõe. Quando a lista tem apenas dois elementos ela recebe o nome de par ordenado. E uma lista vazia é uma lista cujo comprimento é igual a zero.</br></br>
 
-Portanto, temos que as premissas podem ser verdadeiras ou falsas. Se afirmo que o céu está claro e sem nuvens, você pode olhar pela janela e concluir se a afirmação é verdadeira ou falsa. Se estiver chovendo, você dirá que minha afirmação é falsa. Por outro lado, um argumento pode ser válido ou inválido.</br>
+Outro tipo de lista que podemos ter, são listas de dois elementos em que há n escolhas para o primeiro elemento e, para cada uma dessas escolhas, há m escolhas do segundo elemento. Então o número de tais listas é  n × m.</br></br>
 
-Inferência é o processo que permite chegar a conclusões a partir de premissas, constituindo a argumentação lógica perfeita. A inferência, como veremos a seguir, pode ser de dois tipos: indutiva e dedutiva. Uma inferência inválida é chamada falácia. 
-Em especial no século XIX, alguns matemáticos e filósofos concluíram que a lógica formal não era suficiente para que se pudesse alcançar o rigor necessário na análise dos argumentos. Por isso que foi desenvolvida a lógica simbólica, relacionada à matemática, a partir do século XIX. Ela permite a expressão das premissas e de suas relações por meio de símbolos matemáticos, construindo equações para expressar argumentos. Tal linguagem é absolutamente precisa e não dá margem a duplas interpretações. </br>
+Um caso especial envolvendo a contagem de listas consiste no problema de se determinar quantas listas de comprimento n extraídas de um universo de n objetos, em que não se permitem repetições, podem ser formadas. Em outras palavras, de quantas maneiras diferentes podemos dispor n objetos em uma lista, usando cada objeto exatamente uma única vez?</br></br>
 
-Lógica Formal
-Começa nos estudos de Aristóteles, na Grécia Antiga. A lógica é dita formal quando analisa e representa a forma de qualquer argumento para que possa ser considerado válido para alguma conclusão.</br> 
+Podemos estender o princípio da multiplicação para listas com dois elementos para esta situação, determinando o total de listas como:</br></br>
 
-Para se entender a lógica formal e como formamos nosso raciocínio é importante ter em mente alguns conceitos. Uma proposição é um pensamento em forma de frase declarativa. Essa proposição pode ser verdadeira ou falsa. A lógica não permite concluir se uma proposição ou afirmação é verdadeira ou falsa, ela apenas garante que, com base em premissas verdadeiras, seja possível chegar a conclusões verdadeiras.</br>
+n ⋅ (n−1) ⋅ (n−2) … (n−n+1) =n⋅ (n−1) ⋅ (n−2) … (2) ⋅ (1)</br></br>
 
-Portanto, temos que as premissas podem ser verdadeiras ou falsas. Se afirmo que o céu está claro e sem nuvens, você pode olhar pela janela e concluir se a afirmação é verdadeira ou falsa. Se estiver chovendo, você dirá que minha afirmação é falsa. Por outro lado, um argumento pode ser válido ou inválido.</br></p></br>
-      <h4 id="Lógica transcendental">Lógica transcendental</h4>
-      <p>É desenvolvida por toda a obra do filósofo Immanuel Kant, em especial em seu célebre livro Crítica da Razão Pura (2015). Nesse livro, Kant discute que nosso conhecimento, o conhecimento humano, parte de duas fontes principais. A primeira trata da receptividade das impressões por meio de nossos sentidos; a segunda fonte é relativa à faculdade de conhecer um objeto por representações mentais, a partir do pensamento.</br>
+Essa expressão ocorre com frequência em matemática e recebe um nome e símbolo especiais: chama-se fatorial de n e representamos por n!. Por exemplo, 6! = 6⋅5⋅4⋅3⋅2⋅1 = 720. Por definição, considera-se que 1!=1 e 0!=1</br>
+(SCHEINERMAN, 2015).</br></p></br>
+      <h4 id="mdo">Árvore de decisão</h4>
+      <p>Outra forma de representarmos os possíveis resultados de uma ordenação (listas) é a utilização de um diagrama chamado Árvore de Decisão. Uma árvore de decisão é uma estrutura hierárquica que representa um mapeamento de possíveis resultados de uma série de escolhas relacionadas. A árvore de decisão é uma importante ferramenta para auxiliar na tomada de decisões, bem como visualizar as ramificações e as consequências. Elas podem ser usadas tanto para conduzir diálogos informais quanto para mapear um algoritmo que prevê a melhor decisão (escolha), matematicamente, além de auxiliar na criação de planos de ação.</br></br>
 
-Desse modo, a lógica transcendental opera a partir das representações, dos conceitos e não das coisas em si. Trata-se de uma investigação sobre as representações a priori, as categorias, os conceitos puros em relação aos objetos, enquanto a Lógica geral se volta para a forma lógica do pensamento.</br>
+Em geral, uma árvore de decisão inicia a partir de um único nó de origem (chamado de nó raiz), que se divide em possíveis resultados. O nó raiz é representado por um elemento no topo da árvore e representa o todo ou uma amostra de alguma categoria e expressa nós de decisão, em que, a partir do nó raiz, temos ramificações que levam a escolhas de um resultado (decisão).</br></p></br>
+      <h4 id="Combinatória">Combinatória</h4>
+      <p>Em Combinatória, existem diferentes tipos de agrupamentos (ordenados ou não) que recebem os nomes específicos de Arranjos, Permutações e Combinações. Apesar de ser possível determinar esses agrupamentos de maneira intuitiva, existem fórmulas matemáticas que nos auxiliam a realizar essa tarefa. Vamos, então, aprender a utilizá-las, considerando os agrupamentos (Arranjos, Permutações e Combinações) simples, isso é, formados por elementos distintos. </br></p></br>
+      <h4 id="Arranjo">Arranjo</h4>
+      <p>De acordo com Iezzi et al. (2004), dado um conjunto com n elementos distintos, chama-se arranjo dos n elementos, tomados p a p, a qualquer sequência ordenada de p elementos distintos escolhidos entre os n existentes. Para determinar o número de arranjos podemos utilizar a fórmula An,p=n!(n−p)!.
+</br></br>
+Exemplo: Considere o conjunto A={1,2,3,4}. Vamos determinar o número de arranjos desses quatro elementos (n=4) tomados dois a dois (p=2). Utilizando a fórmula para determinação do número de arranjos, temos que:
+</br></br>
+  A4,2=n!(n−p)!=4!(4−2)!=4!2!=4⋅3⋅2⋅12⋅1=242=12
+</br></p></br>
+      <h4 id="Permutação">Permutação</h4>
+      <p>Um caso especial de arranjo, denominado permutação, é obtido quando dado um conjunto com n elementos distintos, selecionamos exatamente n elementos para formar a sequência ordenada.</br></br> 
 
-Kant distingue dois tipos de Conhecimento:</br>
+Exemplo: Considere o problema de se determinar de quantas maneiras seis pessoas A, B, C, D, E e F podem ser dispostas em uma fila indiana. Cada maneira de compor a fila é uma permutação das seis pessoas, pois qualquer fila obtida é uma sequência ordenada na qual comparecem sempre as seis pessoas. Ao utilizarmos a fórmula do número de arranjos, percebemos que neste caso n=p.</br></br>
+ 
+A6,6=n!(n−p)!=6!(6−6)!=6!0!=6⋅5⋅4⋅3⋅2⋅11=720
+</br></br>
+Ou seja, existem 720 maneiras distintas para organização dessa fila.</br></p></br>
+      <h4 id="Combinação">Combinação</h4>
+      <p>Há ainda outra forma de agrupamento, denominada combinação, que considera cada sequência obtida como um conjunto não ordenado. Dado um conjunto com n elementos distintos, chama-se combinação dos n elementos, tomados p a p, a qualquer subconjunto formado por p elementos distintos escolhidos entre os n existentes. Para determinar o número de combinações, podemos utilizar a fórmula  Cn,p=n!p!(n−p)!.</br></br>
 
-Conhecimento Empírico: também chamado conhecimento a posteriori está relacionado ao que é obtido por meio de nossos sentidos, à observação, à experimentação, com base na presença real de determinado objeto.</br> 
-
-Conhecimento Puro: também chamado de conhecimento a priori, é relativo à representação que não se mescla com a sensação, é puramente racional, não depende de nenhuma informação vinda de nossos sentidos.</br></p></br>
-      <h4 id="Lógica dedutiva">Lógica dedutiva</h4>
-      <p>É aquela que parte de premissas afirmativas ou leis mais gerais permitindo a obtenção de verdades menos gerais ou particulares. Vamos a um exemplo de inferência dedutiva ou dedução?</br>
-
-Todo o analista de sistemas sabe programar.</br>
-
-Mariana é analista de sistemas.</br>
-
-Portanto, Mariana sabe programar.</br>
-
- Aqui, partimos de uma informação geral sobre as habilidades dos analistas de sistemas para concluir sobre as habilidades de Mariana. Com base na afirmativa geral, tomada como verdadeira, a conclusão é inevitável. Chamamos Silogismo esse tipo de argumentação lógica.</br></p></br>
-      <h4 id="Lógica indutiva">Lógica indutiva</h4>
-      <p>Se preocupa com argumentos que permitem conclusões gerais a partir de casos particulares. Vamos a um exemplo de inferência indutiva ou indução?</br>
-
- Mariana é analista de sistemas e sabe programar.</br>
-
-Enzo é analista de sistemas e sabe programar.</br>
-
-Sabrina é analista de sistemas e sabe programar.</br>
-
-(...)</br>
-
-Portanto, todos os analistas de sistemas sabem programar.</br>
-
-Observe que, ao consultar dezenas ou centenas de analistas de sistemas, chegamos a uma conclusão geral com relação a eles. Um cuidado a ser tomado com a lógica indutiva é que um único contraexemplo é capaz de invalidar todo um raciocínio.</br></p></br>
+Exemplo: Considere que dos cinco funcionários A, B, C, D e E de uma empresa do setor de Tecnologia da Informação, três serão promovidos. Queremos determinar todas as combinações desses cinco funcionários, tomados dois a dois. Podemos calcular o número de combinações utilizando a fórmula Cn,p=n!p!(n−p)!, em que  n=5 e p=2.</br></br>
+  
+C5,2=n!p!(n−p)!=5!2!(5−2)!=5!2!3!=5⋅4⋅3⋅2⋅1(2⋅1)(3⋅2⋅1)=1202⋅6=12012=10
+ </br></p></br>      
     </div> 
 </body>
 </html>
