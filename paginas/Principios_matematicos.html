@@ -1,51 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>	
-	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/> 
+  <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-	<title>Site Estudo</title>
+  <title>Site Estudo</title>
 </head>
 <body>
-<div class="pos-f-t">
-  <div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg-dark p-4">
-      <h5 class="text-white h4">Conteúdo expandido</h5>
-      <div class="card-group">
-        <div class="card">
-          <a href="One Punch Man\Temporada1.html"><img class="card-img-top" src="img/Logica_Computacional.png" alt="Imagem de capa do card" id="efeito"></a>
-          <div class="card-body">
-            <h5 class="card-title">Lógica Computacional</h5>
-            <p class="card-text">Fundamentos de lógica 1</p>
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="../index.html">
+    <img src="../img/Voltar.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    Voltar
+  </a>
+</nav>
+ </br>
+    <nav id="navbar-exemplo2" class="navbar navbar-light bg-light espaco">
+      <a class="navbar-brand" href="#">Conteúdo</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#fat">Conceitos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#mdo">Lógica Formal</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Seleção Rapida</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#Lógica transcendental">Lógica transcendental</a>
+            <a class="dropdown-item" href="#Lógica dedutiva">Lógica dedutiva</a>
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#Lógica indutiva">Lógica indutiva</a>
           </div>
-        </div>
-        <div class="card">
-          <a href="One Punch Man\Temporada1.html"><img class="card-img-top" src="img/Evolucao_da_Logica.png" alt="Imagem de capa do card" id="efeito"></a>
-          <div class="card-body">
-            <h5 class="card-title">Lógica Computacional</h5>
-            <p class="card-text">Evolução da lógica 2</p>
-          </div>
-        </div>
-        <div class="card">
-          <a href="One Punch Man\Temporada1.html"><img class="card-img-top" src="img/Principios_Matemáticos.jpg" alt="Imagem de capa do card" id="efeito"></a>
-          <div class="card-body">
-            <h5 class="card-title">Lógica Computacional</h5>
-            <p class="card-text">Princípios matemáticos 3</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <nav class="navbar navbar-dark bg-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Alterna navegação">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </nav>
-</div>  
+        </li>
+      </ul>
+    </nav>
+    <div data-spy="scroll" data-target="#navbar-exemplo2" class="espaco2" data-offset="0"></br>
+      <h4 id="fat">Conceitos</h4>
+      <p>Para melhorar o entendimento da lógica, é necessário conhecer as definições de alguns termos importantes e muito utilizados na lógica. Mundim (2002) destaca :</br>
+
+• Proposição: consiste em um enunciado, uma frase declarativa.</br>
+• Premissas: consistem em proposições que são utilizadas como base para um raciocínio. Pode-se dizer que são as proposições do silogismo.</br>
+• Argumento: conjunto de enunciados que se relacionam uns com os outros.</br>
+• Silogismo: consiste em um raciocínio dedutivo (premissas) e possibilita a dedução de uma conclusão a partir das premissas.</br>
+• Falácia: consiste em argumentos que logicamente estão incorretos.</br>
+A partir dos vocabulários, podemos definir os tipos de lógica existentes, entre os quais estão a lógica formal e a lógica transcendental.</br></p></br>
+      <h4 id="mdo">Lógica Formal</h4>
+      <p>Começa nos estudos de Aristóteles, na Grécia Antiga. A lógica é dita formal quando analisa e representa a forma de qualquer argumento para que possa ser considerado válido para alguma conclusão.</br> 
+
+Para se entender a lógica formal e como formamos nosso raciocínio é importante ter em mente alguns conceitos. Uma proposição é um pensamento em forma de frase declarativa. Essa proposição pode ser verdadeira ou falsa. A lógica não permite concluir se uma proposição ou afirmação é verdadeira ou falsa, ela apenas garante que, com base em premissas verdadeiras, seja possível chegar a conclusões verdadeiras. </br>
+
+Portanto, temos que as premissas podem ser verdadeiras ou falsas. Se afirmo que o céu está claro e sem nuvens, você pode olhar pela janela e concluir se a afirmação é verdadeira ou falsa. Se estiver chovendo, você dirá que minha afirmação é falsa. Por outro lado, um argumento pode ser válido ou inválido.</br>
+
+Inferência é o processo que permite chegar a conclusões a partir de premissas, constituindo a argumentação lógica perfeita. A inferência, como veremos a seguir, pode ser de dois tipos: indutiva e dedutiva. Uma inferência inválida é chamada falácia. 
+Em especial no século XIX, alguns matemáticos e filósofos concluíram que a lógica formal não era suficiente para que se pudesse alcançar o rigor necessário na análise dos argumentos. Por isso que foi desenvolvida a lógica simbólica, relacionada à matemática, a partir do século XIX. Ela permite a expressão das premissas e de suas relações por meio de símbolos matemáticos, construindo equações para expressar argumentos. Tal linguagem é absolutamente precisa e não dá margem a duplas interpretações. </br>
+
+Lógica Formal
+Começa nos estudos de Aristóteles, na Grécia Antiga. A lógica é dita formal quando analisa e representa a forma de qualquer argumento para que possa ser considerado válido para alguma conclusão.</br> 
+
+Para se entender a lógica formal e como formamos nosso raciocínio é importante ter em mente alguns conceitos. Uma proposição é um pensamento em forma de frase declarativa. Essa proposição pode ser verdadeira ou falsa. A lógica não permite concluir se uma proposição ou afirmação é verdadeira ou falsa, ela apenas garante que, com base em premissas verdadeiras, seja possível chegar a conclusões verdadeiras.</br>
+
+Portanto, temos que as premissas podem ser verdadeiras ou falsas. Se afirmo que o céu está claro e sem nuvens, você pode olhar pela janela e concluir se a afirmação é verdadeira ou falsa. Se estiver chovendo, você dirá que minha afirmação é falsa. Por outro lado, um argumento pode ser válido ou inválido.</br></p></br>
+      <h4 id="Lógica transcendental">Lógica transcendental</h4>
+      <p>É desenvolvida por toda a obra do filósofo Immanuel Kant, em especial em seu célebre livro Crítica da Razão Pura (2015). Nesse livro, Kant discute que nosso conhecimento, o conhecimento humano, parte de duas fontes principais. A primeira trata da receptividade das impressões por meio de nossos sentidos; a segunda fonte é relativa à faculdade de conhecer um objeto por representações mentais, a partir do pensamento.</br>
+
+Desse modo, a lógica transcendental opera a partir das representações, dos conceitos e não das coisas em si. Trata-se de uma investigação sobre as representações a priori, as categorias, os conceitos puros em relação aos objetos, enquanto a Lógica geral se volta para a forma lógica do pensamento.</br>
+
+Kant distingue dois tipos de Conhecimento:</br>
+
+Conhecimento Empírico: também chamado conhecimento a posteriori está relacionado ao que é obtido por meio de nossos sentidos, à observação, à experimentação, com base na presença real de determinado objeto.</br> 
+
+Conhecimento Puro: também chamado de conhecimento a priori, é relativo à representação que não se mescla com a sensação, é puramente racional, não depende de nenhuma informação vinda de nossos sentidos.</br></p></br>
+      <h4 id="Lógica dedutiva">Lógica dedutiva</h4>
+      <p>É aquela que parte de premissas afirmativas ou leis mais gerais permitindo a obtenção de verdades menos gerais ou particulares. Vamos a um exemplo de inferência dedutiva ou dedução?</br>
+
+Todo o analista de sistemas sabe programar.</br>
+
+Mariana é analista de sistemas.</br>
+
+Portanto, Mariana sabe programar.</br>
+
+ Aqui, partimos de uma informação geral sobre as habilidades dos analistas de sistemas para concluir sobre as habilidades de Mariana. Com base na afirmativa geral, tomada como verdadeira, a conclusão é inevitável. Chamamos Silogismo esse tipo de argumentação lógica.</br></p></br>
+      <h4 id="Lógica indutiva">Lógica indutiva</h4>
+      <p>Se preocupa com argumentos que permitem conclusões gerais a partir de casos particulares. Vamos a um exemplo de inferência indutiva ou indução?</br>
+
+ Mariana é analista de sistemas e sabe programar.</br>
+
+Enzo é analista de sistemas e sabe programar.</br>
+
+Sabrina é analista de sistemas e sabe programar.</br>
+
+(...)</br>
+
+Portanto, todos os analistas de sistemas sabem programar.</br>
+
+Observe que, ao consultar dezenas ou centenas de analistas de sistemas, chegamos a uma conclusão geral com relação a eles. Um cuidado a ser tomado com a lógica indutiva é que um único contraexemplo é capaz de invalidar todo um raciocínio.</br></p></br>
+    </div> 
 </body>
 </html>
