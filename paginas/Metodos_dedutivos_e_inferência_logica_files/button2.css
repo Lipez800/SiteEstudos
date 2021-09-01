@@ -1,0 +1,81 @@
+.btn2 {
+  width: 50%;
+  border: solid 3px #008390 !important;
+  padding: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .btn2 {
+    width: 75%;
+    border: solid 3px #008390 !important;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .btn2 {
+    width: 75%;
+    border: solid 3px #008390 !important;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .btn2 {
+    width: 100%;
+    border: solid 3px #008390 !important;
+    padding: 10px;
+  }
+}
+
+.img2 {
+  width: 100px;
+  margin: 0 10px 0 0;
+}
+
+@media (max-width: 575.98px) {
+  .img2 {
+    width: 70px;
+    margin: 0 10px 0 0;
+  }
+}
+
+@media only print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+}
+
+@media only print {
+  img {
+    max-width: 100%;
+  }
+}
+
+@media only print {
+  a {
+    word-wrap: break-word;
+  }
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+  color: #333 !important;
+  background-color: rgba(0,85,93,0) !important;
+  border-color: rgba(0,73,80,0) !important;
+}
+
+.btn-primary:hover {
+  color: #333;
+  background-color: rgba(0,85,93,0) !important;
+  border-color: rgba(0,73,80,0) !important;
+}
+
+.btn-primary {
+  color: #333;
+  background-color: rgba(0,85,93,0) !important;
+}
+

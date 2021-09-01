@@ -1,0 +1,33 @@
+$("#mensagem-txt").hide();
+
+setTimeout(function(){
+	$("#quiz01").fadeTo(500, 1.0);
+},500);
+
+document.getElementById("quiz02").style.display = "none";
+
+var rad = document.form.aprendizado;
+var prev = null;
+for (var i = 0; i < rad.length; i++) {
+  rad[i].onclick = function() {
+    mensagemDinamica(this);
+  }
+};
+
+function mensagemDinamica(e) {
+    if(e.value == "sim"){
+       $("#mensagem-txt").show();
+       $("#mensagemCustom").text("Que bom!");        
+       $("#quiz02").fadeTo(500, 1.0);
+       $('html, body').animate({
+        scrollTop: $("#quiz02").offset().top
+    }, 1000);        
+    }else{
+        $("#mensagem-txt").show();
+        $("#mensagemCustom").text("Poxa, que pena!");  
+        $("#quiz02").fadeTo(500, 1.0);
+        $('html, body').animate({
+            scrollTop: $("#quiz02").offset().top
+        }, 1000);
+    }
+}

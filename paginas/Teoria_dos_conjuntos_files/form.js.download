@@ -1,0 +1,58 @@
+const formulario = $(`
+            <div id="quiz01">
+                <div class="form-row my-3">
+                    <div class="col">
+                        <p class="mb-0">Este conteúdo contribuiu para seu aprendizado?</p>
+                    </div>
+                </div>
+                <div class="form-row middle">
+                    <div class="col-6 col-sm-6 col-md-5 col-lg-5 col-xl-5 offset-md-1 offset-lg-1 offset-xl-1">
+                        <label class="col-form-label d-lg-flex justify-content-lg-center align-items-lg-center">
+                            <input type="radio" name="aprendizado" value="sim" id="botao01">
+                            <span class="d-flex d-md-flex justify-content-center align-items-center justify-content-md-center align-items-md-center front-end box">
+                                <i class="fa fa-thumbs-o-up icon-tm"></i>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-5 col-lg-5 col-xl-5">
+                        <label class="col-form-label d-lg-flex justify-content-lg-center align-items-lg-center">
+                            <input type="radio" name="aprendizado" value="não" id="botao02">
+                            <span class="d-flex d-md-flex justify-content-center align-items-center justify-content-md-center align-items-md-center back-end box">
+                                <i class="fa fa-thumbs-o-down"></i>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <div id="mensagem-txt" class="form-row my-3 cabecalho-form py-3">
+                    <div class="col">
+                        <h5 id="mensagemCustom" class="mb-0"></h5>
+                    </div>
+                </div>
+            </div>
+            <div id="quiz02">
+                <div class="form-row my-3">
+                    <div class="col">
+                        <p class="mb-0">Quanto ao formato (cores, fotos, interações etc.), o que você achou deste material?</p>
+                    </div>
+                </div>
+                <div class="form-row middle">
+                    <div class="col-6 col-sm-6 col-md-5 col-lg-5 col-xl-5 offset-md-1 offset-lg-1 offset-xl-1">
+                        <label class="col-form-label d-lg-flex justify-content-lg-center align-items-lg-center">
+                            <input type="radio" name="layout" value="gostei" id="botao03">
+                            <span class="d-flex d-md-flex justify-content-center align-items-center justify-content-md-center align-items-md-center front-end box">
+                                <i class="fa fa-thumbs-o-up icon-tm"></i>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-5 col-lg-5 col-xl-5">
+                        <label class="col-form-label d-lg-flex justify-content-lg-center align-items-lg-center">
+                            <input type="radio" name="layout" value="não gostei" id="botao04">
+                            <span class="d-flex d-md-flex justify-content-center align-items-center justify-content-md-center align-items-md-center back-end box">
+                                <i class="fa fa-thumbs-o-down"></i>
+                            </span>
+                        </label>
+                    </div>                   
+                </div>
+            </div>
+`)
+	$("#element").append(formulario)

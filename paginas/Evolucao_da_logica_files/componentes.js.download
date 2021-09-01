@@ -1,0 +1,82 @@
+$('.botao-expandir').click(function() {
+  $(this).find('i').toggleClass('fa-angle-up fa-angle-down');
+  $('.content').toggleClass('active');
+});
+
+/* Print */
+function handleOutboundLinkClicks(event) {
+   gtag('event', 'Download PDF', {
+      event_category: 'Tema Base', // Alterar pelo nome da aula
+      event_label: 'PDF KLS'
+   });
+}
+
+function imprimir(event) {
+   $("a, p, h1, h2, h3, h4, h5, h6, img, figcaption, figure, button, footer, span, div, ul, ol, li, code, dl, dt, pre, blockquote, dd, th, tbody, thead, tfoot, col, table, section").removeAttr("data-aos");
+
+   window.print();
+};
+
+//Bloco de codigo
+hljs.initHighlightingOnLoad();
+hljs.initLineNumbersOnLoad();
+
+$(document).ready(function() {
+    $('code.hljs').each(function(i, block) {
+        hljs.lineNumbersBlock(block);
+    });
+});
+
+//Barra de progresso
+window.onscroll = function() {
+   myFunction()
+};
+
+function myFunction() {
+   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+   var scrolled = (winScroll / height) * 100;
+   document.getElementById("myBar").style.width = scrolled + "%";
+}
+
+//Mudar as nav
+$(document).ready(() => {
+$('.nav-pills').scrollingTabs({
+      bootstrapVersion: 4,
+      enableSwiping: true,
+      disableScrollArrowsOnFullyScrolled: true,
+      scrollToTabEdge: true
+});
+      $('.nav-link').click(() => {
+        setTimeout(() => {
+          $('.nav-pills').scrollingTabs('scrollToActiveTab');
+        }, 10);
+      });
+  });
+
+// Impede que o evento padrão ocorra.
+$('[data-toggle="popover"]').click(function(e) {
+      e.preventDefault();
+});
+
+// Acessibilidade
+$(function() {
+   $('[data-toggle="popover"]').popover({
+         trigger: 'focus',
+         html: true
+      });
+
+   $('a, p, h1, h2, h3, h4, h5, h6, img, figcaption, button, footer, span, ul, ol, li, code, dl, dt, pre, blockquote, dd, th, tbody, thead, tfoot, col, table').each(function(index) {
+         $(this).attr('tabindex', ++index);
+      });
+});
+
+// Rolar barra topo
+$(document).ready(function() {
+    $('.scroll-home').click(function() {
+        $("html, body").animate({
+              scrollTop: 0
+           }, 600);
+        return false;
+    });
+});
